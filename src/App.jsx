@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import Gallery from './components/Gallery'
 import Contact from './components/Contact'
+import Booking from './components/Booking'
 import AudioPlayer from './components/AudioPlayer'
 import { Instagram, Youtube, Music2 } from 'lucide-react'
 
@@ -29,6 +30,7 @@ function App() {
 
       <Features />
       <Gallery />
+      <Booking />
       <Contact />
 
       <footer id="social" className="bg-yellow-50">

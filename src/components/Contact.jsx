@@ -1,12 +1,16 @@
 import { Phone, Mail, MapPin } from 'lucide-react'
+import AnimatedAccent from './AnimatedAccent'
 
 function Contact() {
   return (
     <section id="contact" className="relative py-16 bg-black text-yellow-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10">
         <div>
-          <h2 className="text-3xl font-extrabold tracking-wider">Book a Session</h2>
-          <p className="mt-3 text-yellow-200/90">Tell us about your project and we’ll get back with times and rates.</p>
+          <div className="inline-block relative mb-4">
+            <AnimatedAccent />
+            <h2 className="relative text-3xl font-extrabold tracking-wider bg-black text-yellow-200 border-4 border-black px-4 py-2">Contact</h2>
+          </div>
+          <p className="text-yellow-200/90">Tell us about your project and we’ll get back with times and rates.</p>
           <form onSubmit={(e)=>e.preventDefault()} className="mt-6 space-y-4">
             <input className="w-full bg-yellow-50 text-black px-4 py-3 border-4 border-black placeholder-black/60" placeholder="Name" />
             <input className="w-full bg-yellow-50 text-black px-4 py-3 border-4 border-black placeholder-black/60" placeholder="Email" />
